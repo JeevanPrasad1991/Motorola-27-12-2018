@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Motorola/Motorola.iml" filepath="$PROJECT_DIR$/Motorola/Motorola.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Motorola-27-12-2018.iml" filepath="$PROJECT_DIR$/Motorola-27-12-2018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annca/annca.iml" filepath="$PROJECT_DIR$/annca/annca.iml" />
+    </modules>
+  </component>
+</project>

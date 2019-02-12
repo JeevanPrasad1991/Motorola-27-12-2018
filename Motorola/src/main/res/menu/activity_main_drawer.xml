@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_daily_entry"
+            android:icon="@mipmap/entry_grey"
+            android:title="Daily Entry" />
+        <item
+            android:id="@+id/nav_download"
+            android:icon="@mipmap/download_grey"
+            android:title="Download" />
+        <item
+            android:id="@+id/nav_upload"
+            android:icon="@mipmap/upload_grey"
+            android:title="Upload" />
+
+        <item
+            android:id="@+id/nav_gatemeeting"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gate Meeting" />
+
+        <item
+            android:id="@+id/nav_sTeam_training"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Sale Team Training" />
+
+
+        <item
+            android:id="@+id/nav_crt"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Class Room Trainee" />
+
+        <item
+            android:id="@+id/nav_export_database"
+            android:icon="@mipmap/services_grey"
+            android:title="Export Database" />
+
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@mipmap/exit_grey"
+            android:title="Exit" />
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@mipmap/services_grey"
+                android:title="Help" />
+        </menu>
+    </item>
+
+</menu>

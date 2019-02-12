@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_background"
+    android:orientation="vertical"
+    android:padding="@dimen/custom_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".gatemeeeting.GateMeetingActivity"
+    tools:showIn="@layout/activity_gate_meeting">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gatemeeting_current_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:padding="6dp"
+                android:text="Current date - 08/02/2019"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/store_entry_text_size14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:padding="6dp"
+                    android:text="Location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/store_entry_text_size14" />
+
+                <EditText
+                    android:id="@+id/gatemeeting_editlocation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="7"
+                    android:background="@drawable/rouded_corner"
+                    android:gravity="center_vertical"
+                    android:hint="Location....."
+                    android:inputType="text"
+                    android:padding="08dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/store_entry_text_size14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gatemeeting_rlall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/custom_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:padding="08dp"
+                        android:text="Remark"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/store_entry_text_size14" />
+
+                    <EditText
+                        android:id="@+id/gatemeeting_editremark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="6"
+                        android:background="@drawable/rouded_corner"
+                        android:gravity="center_vertical"
+                        android:hint="Remark"
+                        android:inputType="text"
+                        android:padding="08dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/store_entry_text_size14" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="08dp"
+                    android:text="Team Picture Group"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/store_entry_text_size14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="12">
+
+                    <ImageView
+                        android:id="@+id/img_cam_group1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:src="@drawable/camera_icon" />
+
+                    <ImageView
+                        android:id="@+id/img_cam_group2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:src="@drawable/camera_icon" />
+
+                    <ImageView
+                        android:id="@+id/img_cam_group3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:src="@drawable/camera_icon" />
+
+                    <ImageView
+                        android:id="@+id/img_cam_group4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:src="@drawable/camera_icon" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/txt_uploadmsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Gate Meeting Data Already Uploaded."
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</LinearLayout>
+
